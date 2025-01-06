@@ -1,0 +1,64 @@
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .strike {
+    position: absolute;
+    background: #6a11cb;
+    height: 10px;
+    width: 320px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Horizontal Strikes */
+  .strike.row-1 {
+    top: 50px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  .strike.row-2 {
+    top: 160px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  .strike.row-3 {
+    top: 270px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  /* Vertical Strikes */
+  .strike.col-1 {
+    top: 0;
+    left: 50px;
+    height: 320px;
+    width: 10px;
+    opacity: 1;
+  }
+  
+  .strike.col-2 {
+    top: 0;
+    left: 160px;
+    height: 320px;
+    width: 10px;
+    opacity: 1;
+  }
+  
+  .strike.col-3 {
+    top: 0;
+    left: 270px;
+    height: 320px;
+    width: 10px;
+    opacity: 1;
+  }
+
+  

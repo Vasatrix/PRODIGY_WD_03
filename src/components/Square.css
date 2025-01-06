@@ -1,0 +1,24 @@
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .square:hover {
+    transform: scale(1.1);
+  }
+  
+  .square.winning {
+    background: #6a11cb;
+    color: white;
+    font-weight: bold;
+  }
+  
